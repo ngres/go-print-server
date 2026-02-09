@@ -22,12 +22,12 @@ type (
 
 	Preset struct {
 		Printer       string
-		JobAttributes printer.JobAttributes `mapstructure:",squash"`
-		TypstTemplate TypstTemplateConfig   `mapstructure:",squash"`
+		TypstTemplate TypstTemplateConfig   `mapstructure:"typst"`
+		JobAttributes printer.JobAttributes `mapstructure:"attributes"`
 	}
 
 	TypstTemplateConfig struct {
-		WorkingDirectory string `mapstructure:"working_directory"`
+		WorkingDirectory string `mapstructure:"working-directory"`
 		Content          string `mapstructure:"content"`
 	}
 

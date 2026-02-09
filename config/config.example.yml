@@ -30,15 +30,17 @@ presets:
     # default printer (must be specified)
     printer: example-printer
     # attributes for print jobs (can be found under internal/printer/attributes.go)
-    media-col:
-      media-source: tray-2
+    attributes:
+      media-col:
+        media-source: tray-2
 
   # additional example preset
   example-preset: # preset name (lowercase)
     printer: example-printer
-    media-col:
-      media-source: tray-1
-    typst-template:
+    attributes:
+      media-col:
+        media-source: tray-1
+    typst:
       working-directory: ./
       content: |-
         #set page(paper: "a5")
