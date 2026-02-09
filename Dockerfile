@@ -6,7 +6,7 @@ COPY --from=ghcr.io/typst/typst:latest /bin/typst /usr/local/bin/typst
 
 RUN apk add --no-cache libgcc libstdc++
 
-WORKDIR $GOPATH/src/github.com/gresio/print-server
+WORKDIR /app
 
 # Copy everything from the current directory to the PWD (Present Working Directory) inside the container
 COPY . .
