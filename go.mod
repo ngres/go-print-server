@@ -1,6 +1,8 @@
 module github.com/nico0302/go-print-server
 
-go 1.18
+go 1.23.0
+
+toolchain go1.24.5
 
 require (
 	github.com/gin-gonic/gin v1.8.2
@@ -11,6 +13,7 @@ require (
 )
 
 require (
+	github.com/Dadido3/go-typst v0.10.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
@@ -27,6 +30,7 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.6 // indirect
+	github.com/smasher164/xid v0.1.2 // indirect
 	github.com/spf13/afero v1.9.3 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect

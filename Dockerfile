@@ -1,6 +1,10 @@
 # syntax=docker/dockerfile:1
 
-FROM golang:1.18-alpine
+FROM golang:1.23-alpine
+
+COPY --from=ghcr.io/typst/typst:latest /bin/typst /usr/local/bin/typst
+
+RUN apk add --no-cache libgcc libstdc++
 
 WORKDIR $GOPATH/src/github.com/gresio/print-server
 

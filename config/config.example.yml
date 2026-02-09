@@ -38,3 +38,11 @@ presets:
     printer: example-printer
     media-col:
       media-source: tray-1
+    typst-template:
+      working-directory: ./
+      content: |-
+        #set page(paper: "a5")
+
+        Printing #document_name on #printer_name
+
+        #image(#document_path)

@@ -23,6 +23,12 @@ type (
 	Preset struct {
 		Printer       string
 		JobAttributes printer.JobAttributes `mapstructure:",squash"`
+		TypstTemplate TypstTemplateConfig   `mapstructure:",squash"`
+	}
+
+	TypstTemplateConfig struct {
+		WorkingDirectory string `mapstructure:"working_directory"`
+		Content          string `mapstructure:"content"`
 	}
 
 	HttpConfig struct {

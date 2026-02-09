@@ -16,6 +16,8 @@ curl -X POST http://localhost:8631/v1/print/url \
    -d '{"url":"https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf","preset":"example-preset"}'
 ```
 
+If [Typst](https://typst.app/open-source/#download) is installed, the incoming print files (PDF, SVG, PNG, JPG, GIF, WEBP) can also be wrapped in a Typst document, enabling format conversions and advanced layouts. Checkout the [config.example.yml](./config/config.example.yml) for more information.
+
 ## Setup
 
 1. Clone this repo.
